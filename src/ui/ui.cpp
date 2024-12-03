@@ -1,6 +1,4 @@
 #include "ui.h"
-#include <qgroupbox.h>
-#include <qnamespace.h>
 
 Ui::Ui() {
   QLabel *hello = new QLabel("Hello world!", this);
