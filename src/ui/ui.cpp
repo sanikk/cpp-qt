@@ -1,9 +1,14 @@
 #include "ui.h"
+#include <QtWidgets>
 
 Ui::Ui() {
-  QLabel *hello = new QLabel("Hello world!", this);
-  hello->setAlignment(Qt::AlignCenter);
-  setWindowTitle("QT STARTER");
-  resize(800,600);
+  QVBoxLayout *mainLayout = new QVBoxLayout;
 
+  scenario_controls = new ScenarioControls;
+  mainLayout->addWidget(scenario_controls);
+
+  QPushButton *openfile = new QPushButton{"press me!"};
+  mainLayout->addWidget(openfile);
+  setLayout(mainLayout);
+  setWindowTitle("QT STARTER");
 }

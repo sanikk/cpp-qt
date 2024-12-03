@@ -1,6 +1,6 @@
 #pragma once
-#include <qlabel.h>
-#include <qtmetamacros.h>
+#include "scenario_controls.h"
+#include <QWidget>
 
 
 class Ui: public QWidget {
@@ -8,5 +8,8 @@ class Ui: public QWidget {
 
 public:
     Ui();
+
+private:
+    ScenarioControls *scenario_controls;
 };
 
